@@ -1,0 +1,220 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #0b213f;
+}
+
+header > div {
+  background-color: #0b213f;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px;
+  & > img {
+    height: 80px;
+  }
+}
+
+#oracle {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#red-bull {
+  color: #e10600;
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav {
+  background: #15151e;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover:not(.current) {
+  color: #e10600;
+}
+
+a[class="current"] {
+  color: #fdf000;
+  border-bottom: 2px solid #fdf000;
+}
+
+#historia-zespolu {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#aktualnosci {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.fat-footer {
+  background-color: #15151e;
+  color: #888;
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 3px solid #fdf000;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+article {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.footer-column ul li a:hover {
+  color: #fdf000;
+}
+
+h2 {
+  border-left: 5px solid #e10600;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+main {
+  margin: 20px;
+  padding: 10px;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  & img {
+    width: 192px;
+    height: 192px;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.redbull-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.redbull-table th {
+  background-color: #0b213f;
+  color: #fdf000;
+  padding: 15px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.redbull-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.redbull-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.redbull-table tbody tr:hover {
+  background-color: #fff9c4;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.redbull-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.redbull-form fieldset {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.redbull-form legend {
+  font-weight: bold;
+  color: #0b213f;
+  padding: 0 10px;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #e10600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #0b213f;
+}
+
+.evaluate-main > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

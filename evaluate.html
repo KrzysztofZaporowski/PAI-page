@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceń nas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>
+          <span id="oracle">Oracle</span>
+          <span id="red-bull">Red Bull Racing</span>
+        </h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Red_Bull_Racing_Logo_2026.svg/1280px-Red_Bull_Racing_Logo_2026.svg.png"
+          alt="logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Strona Główna</a></li>
+          <li><a href="aboutUs.html">O nas</a></li>
+          <li><a href="cars.html">Bolidy</a></li>
+          <li><a href="evaluate.html" class="current">Ocena</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="evaluate-main">
+      <h2>Ankieta Kibica</h2>
+      <p>
+        Wypełnij poniższy formularz, aby podzielić się swoją opinią na temat
+        kierunku, w którym zmierza Oracle Red Bull Racing.
+      </p>
+      <div>
+        <form action="#" method="get" class="redbull-form">
+          <fieldset>
+            <legend>Informacje o Twojej opinii</legend>
+
+            <p>
+              <label for="email">Twój adres e-mail:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="user_email"
+                placeholder="kibic@f1.pl"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="race-date">Od kiedy kibicujesz zespołowi?</label
+              ><br />
+              <input type="date" id="race-date" name="fan_since" />
+            </p>
+
+            <p>
+              <label for="rating"
+                >Jak oceniasz potencjał Isacka Hadjara? (1-10):</label
+              ><br />
+              <input
+                type="range"
+                id="rating"
+                name="hadjar_potential"
+                min="1"
+                max="10"
+                value="5"
+              />
+            </p>
+
+            <p>
+              <label for="color">Wybierz kolor dodatkowy na bolid RB22:</label
+              ><br />
+              <input
+                type="color"
+                id="color"
+                name="livery_highlight"
+                value="#fdf000"
+              />
+            </p>
+
+            <p>
+              <label for="comments">Twoje uwagi do sztabu technicznego:</label
+              ><br />
+              <textarea
+                id="comments"
+                name="user_comments"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </p>
+
+            <button type="submit">Prześlij ocenę</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer class="fat-footer">
+      <div class="footer-column">
+        <h4>O Zespole</h4>
+        <p>
+          Oracle Red Bull Racing to austriacki zespół Formuły 1, startujący w
+          barwach producenta napojów energetycznych Red Bull.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h4>Szybkie Linki</h4>
+        <ul>
+          <li><a href="index.html">Strona Główna</a></li>
+          <li><a href="aboutUs.html">Historia</a></li>
+          <li><a href="cars.html">Specyfikacja Bolidów</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Kontakt i Media</h4>
+        <address>
+          Milton Keynes, UK<br />
+          Email: media@redbullracing.com<br />
+          Tel: +44 1908 279700
+        </address>
+      </div>
+      <div class="footer-column">
+        <h4>Social Media</h4>
+        <p>
+          Śledź nas na Instagramie, X oraz Facebooku, aby być na bieżąco z
+          życiem zespołu.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
